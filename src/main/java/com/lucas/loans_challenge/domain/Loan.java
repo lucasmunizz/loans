@@ -32,10 +32,14 @@ public class Loan {
     }
 
     private boolean getBasicLoan(){
-        return (this.customer.isIncomeLowerOrEqualThan(3000.00))
-                || (this.customer.isIncomeBetween(3000.00, 5000.00) &&
+
+        if(this.customer.isIncomeLowerOrEqualThan(3000.00)){
+            return true;
+        }
+
+        return this.customer.isIncomeBetween(3000.00, 5000.00) &&
                     this.customer.isAgeLowerThan(30) &&
-                    this.customer.isFromLocation("SP"));
+                    this.customer.isFromLocation("SP");
 
     }
 
