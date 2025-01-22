@@ -10,6 +10,14 @@ public class Customer {
     private Double income;
     private String location;
 
+    public Customer(String name, Integer age, String cpf, Double income, String location) {
+        this.name = name;
+        this.age = age;
+        this.cpf = cpf;
+        this.income = income;
+        this.location = location;
+    }
+
     public boolean isIncomeGreaterOrEqualThan(Double value){
         return this.income >= value;
     }
@@ -20,6 +28,14 @@ public class Customer {
 
     public boolean isIncomeBetween(Double value1, Double value2){
         return this.income >= value1 && this.income <= value2;
+    }
+
+    public boolean isFromLocation(String location){
+        return this.location.equals(location);
+    }
+
+    public boolean isAgeLowerThan(Integer age){
+        return this.age < age;
     }
 
     public String getName() {
