@@ -23,7 +23,6 @@ public class LoanController {
         ResponseDTO response = this.loanService.getLoans(body);
 
         return ResponseEntity.ok().body(response);
-
     }
 
 }
