@@ -13,7 +13,7 @@ The goal of this project is to provide a simple and efficient system for managin
 ## Technologies Used 🛠️
 
 - **Backend:** Java Spring Boot
-- **Database:** [Database used, e.g., H2, MySQL, PostgreSQL]
+- **Database:** In memory
 - **Tools:** Maven, Git, Postman (for API testing)
 - **Best Practices:** Clean Code, SOLID Principles, RESTful API Design
 
