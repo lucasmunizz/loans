@@ -60,8 +60,8 @@ The API documentation is automatically generated using **Swagger**. You can acce
 {
     "age": 26,
     "cpf": "275.484.389-23",
-    "name": "Vuxaywua Zukiagou",
-    "income": 7000.00,
+    "name": "Lucas Muniz",
+    "income": 5000.00,
     "location": "SP"
 }
 ```
@@ -74,7 +74,7 @@ HTTP/1.1 200 Ok
 
 ```json
 {
-    "customer": "Vuxaywua Zukiagou",
+    "customer": "Lucas Muniz",
     "loans": [
         {
             "type": "PERSONAL",
