@@ -38,3 +38,57 @@ The goal of this project is to provide a simple and efficient system for managin
    ```bash
    mvn spring-boot:run
 5. Access the API endpoints via http://localhost:8080.
+
+## Accessing the API Documentation 📄
+
+The API documentation is automatically generated using **Swagger**. You can access it after running the application.
+
+### Steps to Access Swagger UI:
+
+1. **Run the application** (if not already running):
+   ```bash
+   mvn spring-boot:run
+
+2. **Open your browser and go to the following URL**:
+   http://localhost:8080/swagger-ui.html
+
+## Example Request
+
+**[POST]** `{{host}}/customer-loans`
+
+```json
+{
+    "age": 26,
+    "cpf": "275.484.389-23",
+    "name": "Vuxaywua Zukiagou",
+    "income": 7000.00,
+    "location": "SP"
+}
+```
+
+## Example Response
+
+```
+HTTP/1.1 200 Ok
+```
+
+```json
+{
+    "customer": "Vuxaywua Zukiagou",
+    "loans": [
+        {
+            "type": "PERSONAL",
+            "interest_rate": 4
+        },
+        {
+            "type": "GUARANTEED",
+            "interest_rate": 3
+        },
+        {
+            "type": "CONSIGNMENT",
+            "interest_rate": 2
+        }
+    ]
+}
+```
+
